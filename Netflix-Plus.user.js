@@ -17,12 +17,12 @@
 // @updateURL	https://github.com/LastRoze/Netflix-Plus/raw/master/Netflix-Plus.meta.js
 // @downloadURL	https://github.com/LastRoze/Netflix-Plus/raw/master/Netflix-Plus.user.js
 // @supportURL	https://lastroze.github.io/
+// @require	https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
 // @match	*://www.netflix.com/*
-// @run-at	document-start
 // @grant	none
 // ==/UserScript==
 
-(function() {
+(function() { 'use strict';
 	var DNA = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
 			if(mutation.addedNodes.length > 0 && mutation.addedNodes[0].className && mutation.addedNodes[0].className.toString().match(/skip-credits/)) {
