@@ -1,3 +1,4 @@
+
 // ==UserScript==
 // @name        DNA Netflix Plus
 // @namespace   DNA Netflix Plus
@@ -19,6 +20,5 @@
 // @supportURL	https://lastroze.github.io/
 // @require	https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
 // @match	*://www.netflix.com/*
-// @run-at	document-start
 // @grant	none
 // ==/UserScript==
