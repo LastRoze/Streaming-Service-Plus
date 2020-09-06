@@ -18,7 +18,7 @@
 // @downloadURL	https://github.com/LastRoze/Netflix-Plus/raw/master/Netflix-Plus.user.js
 // @supportURL	https://lastroze.github.io/
 // @require	https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
-// @match	*://*.netflix.com/*
+// @match	*://www.netflix.com/*
 // @run-at	document-start
 // @grant	none
 // ==/UserScript==
