@@ -23,19 +23,19 @@ indent_style = tab
 
 # Visual Studio XML Project Files
 [*.{csproj,vbproj,vcxproj.filters,proj,projitems,shproj}]
-indent_size = 2
+indent_size = 4
 
 # XML Configuration Files
 [*.{xml,config,props,targets,nuspec,resx,ruleset,vsixmanifest,vsct}]
-indent_size = 2
+indent_size = 4
 
 # JSON Files
 [*.{json,json5,webmanifest}]
-indent_size = 2
+indent_size = 4
 
 # YAML Files
 [*.{yml,yaml}]
-indent_size = 2
+indent_size = 4
 
 # Markdown Files
 [*.md]
@@ -43,7 +43,7 @@ trim_trailing_whitespace = false
 
 # Web Files
 [*.{htm,html,js,jsm,ts,tsx,css,sass,scss,less,svg,vue}]
-indent_size = 2
+indent_size = 4
 
 # Batch Files
 [*.{cmd,bat}]
