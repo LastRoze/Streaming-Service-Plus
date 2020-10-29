@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		DNA Netflix Plus
 // @namespace	DNA Netflix Plus
-// @version		1.1
+// @version		2.0
 // @author		Last Roze
 // @description	Dominion With Domination
 // @copyright	©2020 - Yoga Budiman
