@@ -1,44 +1,43 @@
 // ==UserScript==
-// @name        DNA Netflix Plus
-// @namespace   DNA Netflix Plus
-// @version	1.0
-// @author	Last Roze
+// @name		DNA Netflix Plus
+// @namespace	DNA Netflix Plus
+// @version		1.1
+// @author		Last Roze
 // @description	Dominion With Domination
 // @copyright	©2020 - Yoga Budiman
 // @homepage	https://github.com/LastRoze/
 // @homepageURL	https://github.com/LastRoze/
-// @website	https://lastroze.github.io/
-// @source	https://github.com/LastRoze/Netflix-Plus
-// @icon	https://github.com/LastRoze/Netflix-Plus/blob/master/DNA.jpg?raw=true
-// @iconURL	https://github.com/LastRoze/Netflix-Plus/blob/master/DNA.jpg?raw=true
+// @website		https://lastroze.github.io/
+// @source		https://github.com/LastRoze/Netflix-Plus
+// @icon		https://github.com/LastRoze/Netflix-Plus/blob/master/DNA.jpg?raw=true
+// @iconURL		https://github.com/LastRoze/Netflix-Plus/blob/master/DNA.jpg?raw=true
 // @defaulticon	https://github.com/LastRoze/Netflix-Plus/blob/master/DNA.jpg?raw=true
-// @icon64	https://github.com/LastRoze/Netflix-Plus/blob/master/DNA.jpg?raw=true
+// @icon64		https://github.com/LastRoze/Netflix-Plus/blob/master/DNA.jpg?raw=true
 // @icon64URL	https://github.com/LastRoze/Netflix-Plus/blob/master/DNA.jpg?raw=true
 // @updateURL	https://github.com/LastRoze/Netflix-Plus/raw/master/Netflix-Plus.meta.js
 // @downloadURL	https://github.com/LastRoze/Netflix-Plus/raw/master/Netflix-Plus.user.js
 // @supportURL	https://lastroze.github.io/
-// @require	https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
-// @match	*://www.netflix.com/*
-// @grant	none
+// @require		https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
+// @match		*://www.netflix.com/*
+// @grant		none
 // ==/UserScript==
 
 (function() { 'use strict';
 	var DNA = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
+		mutations.forEach(function(mutation) {
 			if(mutation.addedNodes.length > 0 && mutation.addedNodes[0].className && mutation.addedNodes[0].className.toString().match(/skip-credits/)) {
 				var iD1 = $(".skip-credits");
 				if (iD1.length > 0) {
 					var bT1 = iD1.find(".nf-flat-button-text");
 					bT1.click();
-                } else if (mutation.addedNodes.length > 0 && mutation.addedNodes[0].className && mutation.addedNodes[0].className.toString().match(/nfa-pos-abs/)) {
-					var iD2 = $(".next-episode-seamless-button");
+				} else if (mutation.addedNodes.length > 0 && mutation.addedNodes[0].className && mutation.addedNodes[0].className.toString().match(/main-hitzone-element-container/)) {
+					var iD2 = document.querySelector('.button-nfplayerNextEpisode');
 					if (iD2.length > 0) {
-						var bT2 = iD2.find(".ltr-14hip7q");
 						bT2.click();
 					}
 				}
 			}
-        });
-    });
-    DNA.observe(document.querySelector('body'), { childList: true, subtree: true });
+		});
+	});
+DNA.observe(document.querySelector('body'), { childList: true, subtree: true });
 })();
