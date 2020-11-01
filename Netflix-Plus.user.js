@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		DNA Netflix Plus
 // @namespace	DNA Netflix Plus
-// @version		2.0
+// @version		3.0
 // @author		Last Roze
 // @description	Dominion With Domination
 // @copyright	©2020 - Yoga Budiman
@@ -17,36 +17,21 @@
 // @updateURL	https://github.com/LastRoze/Netflix-Plus/raw/master/Netflix-Plus.meta.js
 // @downloadURL	https://github.com/LastRoze/Netflix-Plus/raw/master/Netflix-Plus.user.js
 // @supportURL	https://lastroze.github.io/
-// @require		https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
 // @match		*://www.netflix.com/*
 // @grant		none
 // ==/UserScript==
 
 (function() { 'use strict';
-	var DNA1 = new MutationObserver(function(mutations) {
+	var DNA = new MutationObserver(function(mutations) {
 		mutations.forEach(function(mutation) {
 			if(mutation.addedNodes.length > 0 && mutation.addedNodes[0].className && mutation.addedNodes[0].className.toString().match(/skip-credits/)) {
-				var iD1 = $(".skip-credits");
-				if (iD1.length > 0) {
-					var bT1 = iD1.find(".nf-flat-button-text");
-					bT1.click();
-				}
+				var bT1 = document.querySelector('.nf-flat-button-text');
+				bT1.click();
+			} else if(mutation.addedNodes.length > 0 && mutation.addedNodes[0].className && mutation.addedNodes[0].className.toString().match(/main-hitzone-element-container/)) {
+				var bT2 = document.querySelector('.button-nfplayerNextEpisode');
+				bT2.click();
 			}
 		});
 	});
-DNA1.observe(document.querySelector('body'), { childList: true, subtree: true });
-})();
-
-(function() {'use strict';
-    var DNA2 = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-            if(mutation.addedNodes.length > 0 && mutation.addedNodes[0].className && mutation.addedNodes[0].className.toString().match(/main-hitzone-element-container/)) {
-                var bT2 = document.querySelector('.button-nfplayerNextEpisode')
-                setTimeout(function() {
-                    bT2.click();
-                }, 1);
-            }
-        });
-    });
-DNA2.observe(document.querySelector('body'), { childList: true, subtree: true });
+DNA.observe(document.querySelector('body'), { childList: true, subtree: true });
 })();
