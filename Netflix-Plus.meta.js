@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		DNA Netflix Plus
 // @namespace	DNA Netflix Plus
-// @version		2.0
+// @version		3.0
 // @author		Last Roze
 // @description	Dominion With Domination
 // @copyright	©2020 - Yoga Budiman
@@ -17,7 +17,6 @@
 // @updateURL	https://github.com/LastRoze/Netflix-Plus/raw/master/Netflix-Plus.meta.js
 // @downloadURL	https://github.com/LastRoze/Netflix-Plus/raw/master/Netflix-Plus.user.js
 // @supportURL	https://lastroze.github.io/
-// @require		https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
 // @match		*://www.netflix.com/*
 // @grant		none
 // ==/UserScript==
