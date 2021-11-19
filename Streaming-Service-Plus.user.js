@@ -844,7 +844,7 @@ async function initGMC() {
         type: "text",
         section: "Pause/Resume Hotkey",
         size: 6,
-        default: "F7",
+        default: "KeyM",
       },
       hotkey: {
         type: "checkbox",
