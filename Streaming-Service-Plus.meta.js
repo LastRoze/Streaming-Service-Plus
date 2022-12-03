@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		DNA Streaming Service Plus
 // @namespace	DNA Streaming Service Plus
-// @version		2.0
+// @version		2.1
 // @author		Last Roze
 // @description	Dominion With Domination
 // @copyright	©2020 - 2023 // Yoga Budiman
