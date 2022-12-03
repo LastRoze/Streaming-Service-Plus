@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name		DNA Streaming Service Plus
 // @namespace	DNA Streaming Service Plus
-// @version		1.0
+// @version		2.0
 // @author		Last Roze
 // @description	Dominion With Domination
-// @copyright	©2020 - Yoga Budiman
+// @copyright	©2020 - 2023 // Yoga Budiman
 // @homepage	https://github.com/LastRoze/
 // @homepageURL	https://github.com/LastRoze/
 // @website		https://lastroze.github.io/
@@ -17,31 +17,35 @@
 // @updateURL	https://github.com/LastRoze/Streaming-Service-Plus/raw/master/Netflix-Plus.meta.js
 // @downloadURL	https://github.com/LastRoze/Streaming-Service-Plus/raw/master/Netflix-Plus.user.js
 // @supportURL	https://lastroze.github.io/
-// @match		*://*.amazon.ae/*
-// @match		*://*.amazon.ca/*
-// @match		*://*.amazon.cn/*
-// @match		*://*.amazon.co.jp/*
-// @match		*://*.amazon.co.uk/*
-// @match		*://*.amazon.com/*
-// @match		*://*.amazon.com.au/*
-// @match		*://*.amazon.com.br/*
-// @match		*://*.amazon.com.mx/*
-// @match		*://*.amazon.de/*
-// @match		*:/*.amazon.eg/*
-// @match		*://*.amazon.es/*
-// @match		*://*.amazon.fr/*
-// @match		*://*.amazon.in/*
-// @match		*://*.amazon.it/*
-// @match		*://*.amazon.nl/*
-// @match		*://*.amazon.pl/*
-// @match		*://*.amazon.sa/*
-// @match		*://*.amazon.se/*
-// @match		*://*.amazon.sg/*
-// @match		*://*.amazon.tr/*
-// @match		*://*.disneyplus.com/*
-// @match		*://*.hulu.com/*
-// @match		*://*.netflix.com/*
-// @match		*://*.primevideo.com/*
+// @match		http*://*.amazon.ae/*
+// @match		http*://*.amazon.ca/*
+// @match		http*://*.amazon.cn/*
+// @match		http*://*.amazon.co.jp/*
+// @match		http*://*.amazon.co.uk/*
+// @match		http*://*.amazon.com/*
+// @match		http*://*.amazon.com.au/*
+// @match		http*://*.amazon.com.br/*
+// @match		http*://*.amazon.com.mx/*
+// @match		http*://*.amazon.de/*
+// @match		http*://*.amazon.eg/*
+// @match		http*://*.amazon.es/*
+// @match		http*://*.amazon.fr/*
+// @match		http*://*.amazon.in/*
+// @match		http*://*.amazon.it/*
+// @match		http*://*.amazon.nl/*
+// @match		http*://*.amazon.pl/*
+// @match		http*://*.amazon.sa/*
+// @match		http*://*.amazon.se/*
+// @match		http*://*.amazon.sg/*
+// @match		http*://*.amazon.tr/*
+// @match		http*://*.disneyplus.com/*
+// @match		http*://*.starplus.com/*
+// @match		http*://play.hbomax.com/*
+// @match		http*://*.hotstar.com/*
+// @match		http*://*.hulu.com/*
+// @match		http*://*.netflix.com/*
+// @match		http*://*.primevideo.com/*
+// @match		http*://*.starz.com/*
 // @require		https://github.com/LastRoze/DNA-Shield/raw/master/DNA-GM-Config.js
 // @grant		GM_registerMenuCommand
 // @grant		GM_unregisterMenuCommand
