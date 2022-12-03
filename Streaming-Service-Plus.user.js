@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		DNA Streaming Service Plus
 // @namespace	DNA Streaming Service Plus
-// @version		2.0
+// @version		2.1
 // @author		Last Roze
 // @description	Dominion With Domination
 // @copyright	©2020 - 2023 // Yoga Budiman
@@ -962,7 +962,7 @@ async function initGMC() {
   resetBtn.addEventListener("click", () => GM_config.reset());
   supportBtn.addEventListener("click", () =>
     GM_openInTab(
-      "https://greasyfork.org/scripts/420475-netflix-marathon-pausable"
+      "https://github.com/LastRoze/Streaming-Service-Plus/issues"
     )
   );
   GM_config.error = false; // this switch tells us if the user input an invalid value for a setting so we won't close the GUI when they try to save.
